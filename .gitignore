@@ -1,0 +1,6 @@
+node_modules
+**/cypress/videos
+**/cypress/screenshots
+.vscode/settings.json
+**/cypress/report
+**/mochawesome-report

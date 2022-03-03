@@ -52,11 +52,12 @@ Cypress.Commands.add('addCandidates', () => {
 	const year = date.getUTCFullYear()
 	const mounth = (date.getUTCMonth() + 1).toString().padStart(2, '0')
 	const day = (date.getUTCDay() - 2).toString().padStart(2, '0')
-	const ss = date.getUTCSeconds()
 	cy.get('#frmList_ohrmListComponent').within(() => {
 		cy.get('#btnAdd').click()
 	})
 	cy.fixture('../fixtures/cadidate.json').then((info) => {
+		const ss = date.getUTCSeconds()
+		const key = `${info.keywords}${ss}`
 		cy.get('#frmAddCandidate').within(() => {
 			cy.get('#addCandidate_firstName')
 				.type(info.firstName)
@@ -65,11 +66,13 @@ Cypress.Commands.add('addCandidates', () => {
 				.get('#addCandidate_lastName')
 				.type(info.lastName)
 				.get('#addCandidate_email')
-				.type(info.email + ss + '@gmail.com')
+				.type(info.email)
 				.get('#addCandidate_contactNo')
 				.type(info.contactNo)
 				.get('#addCandidate_vacancy')
 				.select(info.jobVacancy)
+				.get('#addCandidate_keyWords')
+				.type(key)
 				.get('#addCandidate_comment')
 				.type(info.comment)
 		})
@@ -84,3 +87,48 @@ Cypress.Commands.add('addCandidates', () => {
 Cypress.Commands.add('readMessage', (notification) => {
 	cy.get('body').should('contain.text', notification)
 })
+Cypress.Commands.add('searchCandidate', () => {
+	cy.fixture('../fixtures/cadidate.json').then((info) => {
+		cy.get('#srchCandidates').within(() => {
+			cy.get('#candidateSearch_candidateName')
+				.clear()
+				.type(`${info.firstName} ${info.middleName} ${info.lastName}{enter}`)
+				.get('#candidateSearch_keywords')
+				.type(info.keywords)
+				.get('#btnSrch')
+				.click()
+		})
+	})
+})
+Cypress.Commands.add('downloadCandidateResume', () => {
+	cy.fixture('../fixtures/cadidate.json').then((info) => {
+		cy.get('#resultTable').within(() => {
+			cy.get('tr').contains(info.jobVacancy).parent('tr').children('td').first().click()
+		})
+		cy.window()
+			.document()
+			.then(function (doc) {
+				doc.addEventListener('click', () => {
+					setTimeout(function () {
+						doc.location.reload()
+					}, 5000)
+				})
+				cy.get('#resultTable').within(() => {
+					cy.get('tr')
+						.contains(info.jobVacancy)
+						.parent('tr')
+						.children('td')
+						.contains('Download')
+						.click()
+				})
+			})
+	})
+	cy.intercept(
+		'GET',
+		'https://opensource-demo.orangehrmlive.com/index.php/recruitment/viewCandidateAttachment**',
+		(req) => {
+			expect(req.statusCode).to.eq(200)
+		}
+	)
+})
+

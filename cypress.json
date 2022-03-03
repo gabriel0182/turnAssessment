@@ -1,33 +1,30 @@
 {
-	"testFiles": ["**/addValidCandidate.feature"],
+	"testFiles": ["**/addValidCandidate.feature", "**/downloadCandidateResume.feature"],
 	"blockHosts": ["www.google-analytics.com"],
+	"downloadsFolder": "cypress/downloads",
 	"viewportWidth": 1480,
 	"viewportHeight": 980,
 	"screenshotOnRunFailure": true,
+	"trashAssetsBeforeRuns": true,
 	"video": true,
 	"videoUploadOnPasses": false,
-	"defaultCommandTimeout": 50000,
+	"defaultCommandTimeout": 2000,
 	"numTestsKeptInMemory": 50,
-	"responseTimeout": 30000,
-	"requestTimeout": 30000,
-	"taskTimeout": 20000,
-	"execTimeout": 200000,
+	"responseTimeout": 3000,
+	"requestTimeout": 3000,
+	"taskTimeout": 2000,
+	"execTimeout": 2000,
 	"retries": {
 		"runMode": 1,
 		"openMode": 0
 	},
-	"pageLoadTimeout": 80000,
+	"env": {
+		"allureResultsPath": "someFolder/results",
+		"tmsPrefix": "https://url-to-bug-tracking-system/task-",
+		"issuePrefix": "https://url-to-tms/tests/caseId-"
+	},
 	"chromeWebSecurity": false,
 	"watchForFileChanges": false,
-	"reporter": "mochawesome",
-	"reporterOptions": {
-		"reportDir": "cypress/report/mochawesome-report",
-		"inline": true,
-		"overwrite": false,
-		"html": false,
-		"json": true,
-		"timestamp": "mmddyyyy_HHMMss"
-	},
 	"json.schemas": [
 		{
 			"fileMatch": ["/cypress.json"],

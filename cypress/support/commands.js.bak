@@ -130,5 +130,5 @@ Cypress.Commands.add('downloadCandidateResume', () => {
 			expect(req.statusCode).to.eq(200)
 		}
 	)
-	//cy.readFile('./Downloads/cve.txt')
 })
+

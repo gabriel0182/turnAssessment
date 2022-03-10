@@ -1,34 +1,37 @@
 {
-	"testFiles": ["**/addValidCandidate.feature", "**/downloadCandidateResume.feature"],
-	"blockHosts": ["www.google-analytics.com"],
-	"downloadsFolder": "cypress/downloads",
-	"viewportWidth": 1480,
-	"viewportHeight": 980,
-	"screenshotOnRunFailure": true,
-	"trashAssetsBeforeRuns": true,
-	"video": true,
-	"videoUploadOnPasses": false,
-	"defaultCommandTimeout": 2000,
-	"numTestsKeptInMemory": 50,
-	"responseTimeout": 3000,
-	"requestTimeout": 3000,
-	"taskTimeout": 2000,
-	"execTimeout": 2000,
-	"retries": {
-		"runMode": 1,
-		"openMode": 0
-	},
-	"env": {
-		"allureResultsPath": "someFolder/results",
-		"tmsPrefix": "https://url-to-bug-tracking-system/task-",
-		"issuePrefix": "https://url-to-tms/tests/caseId-"
-	},
-	"chromeWebSecurity": false,
-	"watchForFileChanges": false,
-	"json.schemas": [
-		{
-			"fileMatch": ["/cypress.json"],
-			"url": "https://raw.githubusercontent.com/cypress-io/cypress/develop/cli/schema/cypress.schema.json"
-		}
-	]
+    "testFiles": [
+        "**/addValidCandidate.feature",
+        "**/downloadCandidateResume.feature"
+    ],
+    "blockHosts": ["www.google-analytics.com"],
+    "downloadsFolder": "cypress/downloads",
+    "viewportWidth": 1480,
+    "viewportHeight": 980,
+    "screenshotOnRunFailure": true,
+    "trashAssetsBeforeRuns": true,
+    "video": true,
+    "videoUploadOnPasses": false,
+    "defaultCommandTimeout": 2000,
+    "numTestsKeptInMemory": 50,
+    "responseTimeout": 3000,
+    "requestTimeout": 3000,
+    "taskTimeout": 2000,
+    "execTimeout": 2000,
+    "retries": {
+        "runMode": 1,
+        "openMode": 0
+    },
+    "env": {
+        "allureResultsPath": "allure-results",
+        "tmsPrefix": "https://url-to-bug-tracking-system/task-",
+        "issuePrefix": "https://url-to-tms/tests/caseId-"
+    },
+    "chromeWebSecurity": false,
+    "watchForFileChanges": false,
+    "json.schemas": [
+        {
+            "fileMatch": ["/cypress.json"],
+            "url": "https://raw.githubusercontent.com/cypress-io/cypress/develop/cli/schema/cypress.schema.json"
+        }
+    ]
 }

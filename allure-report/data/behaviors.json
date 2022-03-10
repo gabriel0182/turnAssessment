@@ -1,0 +1,43 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "Add a valid candidate",
+    "children" : [ {
+      "name" : "Access to OrangeHRM and add a valid candidate",
+      "uid" : "60e14761545106f",
+      "parentUid" : "331bc637972e2ab7add2c34ba890dcc3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1646883073626,
+        "stop" : 1646883087563,
+        "duration" : 13937
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 3,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "331bc637972e2ab7add2c34ba890dcc3"
+  }, {
+    "name" : "Access to OrangeHRM and add a valid candidate",
+    "uid" : "bd79f5d4382b4c92",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1646883783991,
+      "stop" : 1646883799222,
+      "duration" : 15231
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 1,
+    "retriesStatusChange" : false,
+    "parameters" : [ ]
+  } ]
+}

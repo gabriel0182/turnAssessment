@@ -1,0 +1,48 @@
+{
+  "uid" : "c54b816a11bd022f",
+  "name" : "Access to OrangeHRM and add a valid candidate",
+  "fullName" : "Add a valid candidate.Access to OrangeHRM and add a valid candidate",
+  "historyId" : "780aa0ea2b2ebe4299daebac3911f55a",
+  "time" : {
+    "start" : 1646883766530,
+    "stop" : 1646883779524,
+    "duration" : 12994
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Add a valid candidate"
+  }, {
+    "name" : "testClass",
+    "value" : "Add a valid candidate"
+  }, {
+    "name" : "testMethod",
+    "value" : "Access to OrangeHRM and add a valid candidate"
+  }, {
+    "name" : "package",
+    "value" : "Add a valid candidate"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c54b816a11bd022f.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,58 @@
+{
+  "uid" : "bd79f5d4382b4c92",
+  "name" : "Access to OrangeHRM and add a valid candidate",
+  "fullName" : "Add a valid candidate.Access to OrangeHRM and add a valid candidate",
+  "historyId" : "780aa0ea2b2ebe4299daebac3911f55a",
+  "time" : {
+    "start" : 1646883783991,
+    "stop" : 1646883799222,
+    "duration" : 15231
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 1,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Add a valid candidate"
+  }, {
+    "name" : "testClass",
+    "value" : "Add a valid candidate"
+  }, {
+    "name" : "testMethod",
+    "value" : "Access to OrangeHRM and add a valid candidate"
+  }, {
+    "name" : "package",
+    "value" : "Add a valid candidate"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "c54b816a11bd022f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1646883766530,
+        "stop" : 1646883779524,
+        "duration" : 12994
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "bd79f5d4382b4c92.json",
+  "parameterValues" : [ ]
+}

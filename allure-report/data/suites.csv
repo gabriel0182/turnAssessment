@@ -1,0 +1,3 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Wed Mar 09 22:43:03 EST 2022","Wed Mar 09 22:43:19 EST 2022","15231","","Add a valid candidate","","Add a valid candidate","Access to OrangeHRM and add a valid candidate","Access to OrangeHRM and add a valid candidate",""
+"passed","Wed Mar 09 22:31:13 EST 2022","Wed Mar 09 22:31:27 EST 2022","13937","","Add a valid candidate","","","","Access to OrangeHRM and add a valid candidate",""

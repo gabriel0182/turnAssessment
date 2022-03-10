@@ -1,0 +1,21 @@
+[ {
+  "uid" : "bd79f5d4382b4c92",
+  "name" : "Access to OrangeHRM and add a valid candidate",
+  "time" : {
+    "start" : 1646883783991,
+    "stop" : 1646883799222,
+    "duration" : 15231
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "60e14761545106f",
+  "name" : "Access to OrangeHRM and add a valid candidate",
+  "time" : {
+    "start" : 1646883073626,
+    "stop" : 1646883087563,
+    "duration" : 13937
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

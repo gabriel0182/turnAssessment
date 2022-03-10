@@ -1,0 +1,43 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "Add a valid candidate",
+    "children" : [ {
+      "name" : "Access to OrangeHRM and add a valid candidate",
+      "uid" : "60e14761545106f",
+      "parentUid" : "645e1dc12eae312f2fad941d05c5dde9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1646883073626,
+        "stop" : 1646883087563,
+        "duration" : 13937
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 3,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Access to OrangeHRM and add a valid candidate",
+      "uid" : "bd79f5d4382b4c92",
+      "parentUid" : "645e1dc12eae312f2fad941d05c5dde9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1646883783991,
+        "stop" : 1646883799222,
+        "duration" : 15231
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 1,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "645e1dc12eae312f2fad941d05c5dde9"
+  } ]
+}
